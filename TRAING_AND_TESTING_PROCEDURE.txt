@@ -1,0 +1,22 @@
+ALL INFORMATION USED FROM
+https://github.com/Lornatang/DRLN-PyTorch
+
+THIS IS ONLY DEMO FOR DETAIL RESULTS YOU SHOULD PUT MORE DIV2K DATASETS IN T91 FOLDER
+START TRAINING
+-------------------
+config.py	line 31: upscale_factor change to 2.
+config.py	line 33: mode change to train.
+config.py	line 35: exp_name change to DRLN_BIX2.
+python train.py
+
+IF MEMORY ISSUE DELETE FILES in samples/
+
+START TESTING
+---------------
+config.py	line 31: upscale_factor change to 2.
+config.py	line 33: mode change to test.
+config.py	line 70: model_path = "results/DRLN_BIX2/best.pth.tar"
+
+python test.py
+
+FINALLY RESULTS CHECK IN THE FOLDER results/test/DRLN_BIX2
